@@ -1,0 +1,45 @@
+name: flutter_apps
+description: "Angry Birds character catalog app."
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.2
+
+dependencies:
+  flutter:
+    sdk: flutter
+
+  cupertino_icons: ^1.0.8
+  carousel_slider: ^5.1.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+
+  # Semua file di folder assets/ (red.jpg, chuck.jpg, dst.) otomatis terdaftar.
+  assets:
+    - assets/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: fonts/Poppins-Regular.ttf
+        - asset: fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: fonts/Poppins-Bold.ttf
+          weight: 700
+
+    # Font judul Angry Birds (dipakai di AppBar home & detail).
+    # Letakkan file .ttf di folder fonts/, lalu hapus tanda # di bawah ini.
+    # Kalau file belum ada JANGAN di-uncomment, nanti build error.
+    # Selama masih di-comment, judul pakai font default.
+    #
